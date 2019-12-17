@@ -77,10 +77,13 @@
 				left:0; right:0;
 				top:0; bottom:0;
 				margin-left: 10vw;
-				margin-top:20vh;
+				margin-top:10vh;
 				background-color: red;
 				width: 30vw;
 				height: 15vw;
+				text-align: center;
+				font-size:calc(15px + 1.5vmax);
+				line-height: 15vw;
 			}
 			.button2
 			{
@@ -89,14 +92,17 @@
 				left:0; right:0;
 				top:0; bottom:0;
 				margin-right: 10vw;
-				margin-top:20vh;
+				margin-top:10vh;
 				background-color: red;
 				width: 30vw;
 				height: 15vw;
+				text-align: center;
+				font-size:calc(15px + 1.5vmax);
+				line-height: 15vw;
 			}
 		</style>
 	</head>
-	<body>
+	<body font-family="Times New Roman">
 		<div class="content">
 			<div background-color="red" width="Auto" height="Auto">
 				<div id="loc" class="locat">
@@ -116,9 +122,15 @@
 				</div>
 			</div>
 			<div class="button1" onclick="getCritical(0)">
+				<span display= "inline-block" vertical-align= "middle" line-height= "normal">
+					Roll Critical
+				</span>
 			</div>
 			
 			<div class="button2" onclick="getCritical(-20)">
+				<span display= "inline-block" vertical-align= "middle" line-height= "normal">
+					Roll Critical(-20)
+				</span>
 			</div>
 		</div>
 		<script src="scrpt.js">

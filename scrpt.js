@@ -45,7 +45,7 @@ var Arm = [
 ];
 
 var Body = [
-    ["10", "‘Tis But A Scratch", "1", "Gain 1 Bleeding Condition"],
+    ["10", "'Tis But A Scratch", "1", "Gain 1 Bleeding Condition"],
     ["10", "Gut Blow", "1", "Gain 1 Stunned Condition. Pass an Easy (+40) Endurance Test, or vomit, gaining the Prone Condition"],
     ["5", "Low Blow", "1", "Make a Hard (-20) Endurance Test or gain 3 Stunned Condition"],
     ["5", "Twisted Back", "1", "Suffer a Torn Muscle (Minor) injury"],
@@ -134,7 +134,7 @@ function getCritical(mod) {
     }
     document.getElementById("eff").innerHTML = effects;
     document.getElementById("desc").innerHTML = description;
-    document.getElementById("wou").innerHTML = wounds;
+    document.getElementById("wou").innerHTML = ("Wounds: " + wounds);
     document.getElementById("loc").innerHTML = loc;
 }
 
