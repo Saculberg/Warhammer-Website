@@ -7,7 +7,7 @@
 			{
 				width: 90%;
 				height: 90%;
-				background-color: blue;
+				background-color: white;
 
 				position:absolute; /*it can be fixed too*/
 				left:0; right:0;
@@ -19,13 +19,24 @@
 				max-height:100%;
 				overflow:auto;
 			}
+			.location{
+				position:relative
+				left:0; right:0;
+				top:0; bottom:0;
+				width: 80%;
+				background-color: white;
+				margin: auto;
+				margin-top:2vh;
+				font-size:max(25px, calc(1vw + 1vh));
+				text-align: center;
+			}
 			.effects
 			{
 				position:relative
 				left:0; right:0;
 				top:0; bottom:0;
 				width: 80%;
-				background-color: red;
+				background-color: white;
 				margin: auto;
 				margin-top:2vh;
 				font-size:max(25px, calc(1vw + 1vh));
@@ -38,7 +49,7 @@
 				left:0; right:0;
 				top:0; bottom:0;
 				width: 30%;
-				background-color: red;
+				background-color: white;
 				margin: auto;
 				margin-left: 10vw;
 				margin-top:1vh;
@@ -52,7 +63,7 @@
 				left:0; right:0;
 				top:0; bottom:0;
 				width: 30%;
-				background-color: red;
+				background-color: white;
 				margin: auto;
 				margin-right: 10vw;
 				margin-top:1vh;
@@ -87,19 +98,23 @@
 	</head>
 	<body>
 		<div class="content">
-			<div id="eff" class="effects">
-				You are hacked in two. The top half lands in a random direction, and all characters within 2 Yards are showered in blood.
-			</div>
-			<div>
-				<div id="desc" class="description">
-				Split in Two
+			<div background-color="red" width="Auto" height="Auto">
+				<div id="loc" class="location">
+				location
 				</div>
-				
-				<div id="wou" class="wounds">
-				Death
+				<div id="eff" class="effects">
+					Error
+				</div>
+				<div>
+					<div id="desc" class="description">
+					Error
+					</div>
+					
+					<div id="wou" class="wounds">
+					Error
+					</div>
 				</div>
 			</div>
-			
 			<div class="button1">
 			</div>
 			
