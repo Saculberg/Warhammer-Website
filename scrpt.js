@@ -132,7 +132,7 @@ function getCritical(mod) {
             break;
         }
     }
-    document.getElementById("eff").innerHTML = effects;
+    document.getElementById("eff").innerHTML = effects + ".";
     document.getElementById("desc").innerHTML = description;
     document.getElementById("wou").innerHTML = ("Wounds: " + wounds);
     document.getElementById("loc").innerHTML = loc;
