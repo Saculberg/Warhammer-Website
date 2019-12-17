@@ -13,11 +13,11 @@ var Head = [
     ["5", "Broken Nose", "3", "A solid blow to the centre of your face causing blood to pour. Gain 2 Bleeding Conditions. Make a Challenging (+0) Endurance Test, or also gain a Stunned Condition. After this wound has healed, gain +1/-1 SL on social rolls, depending on context, unless Surgery is used to reset the nose"],
     ["5", "Broken Jaw", "4", "The crack is sickening as the blow hits you under the chin, breaking your jaw. Gain 3 Stunned Conditions. Make a Challenging (+0) Endurance Test or gain an Unconscious Condition. Suffer a Broken Bone (Major) injury"],
     ["5", "Concussive Blow", "4", "Your brain rattles in your skull as blood spurts from your nose and ears. Take 1 Deafened, 2 Bleeding, and 1d10 Stunned Conditions. Gain a Fatigued Condition that lasts for 1d10 days. If you receive another Critical Wound to your head while suffering this Fatigued Condition, make an Average (+20) Endurance Test or also gain an Unconscious Condition"],
-    ["5", "Smashed Mouth", "4", "With a sickening crunch, your mouth is suddenly filled with broken teeth and blood. Gain 2 Bleeding Conditions. Lose 1d10 teeth — Amputation (Easy)"],
-    ["5", "Mangled Ear", "4", "Little is left of your ear as the blow tears it apart. You gain 3 Deafened and 2 Bleeding Conditions. Lose your ear — Amputation (Average)"],
-    ["3", "Devastated Eye", "5", "A strike to your eye completely bursts it, causing extraordinary pain. Gain 3 Blinded, 2 Bleeding, and 1 Stunned Condition. Lose your eye — Amputation (Difficult)"],
-    ["3", "Disfiguring Blow", "5", "The blow smashes your entire face, destroying your eye and nose in a cloud of blood. Gain 3 Bleeding, 3 Blinded and 2 Stunned Conditions. Lose your eye and nose — Amputation (Hard)"],
-    ["3", "Mangled Jaw", "5", "The blow almost removes your jaw as it utterly destroys your tongue, sending teeth flying in a shower of blood. Gain 4 Bleeding and 3 Stunned Conditions. Make a Very Hard (-30) Endurance Test or gain an Unconscious Condition. Suffer a Broken Bone (Major) injury and lose your tongue and 1d10 teeth — Amputation (Hard)"],
+    ["5", "Smashed Mouth", "4", "With a sickening crunch, your mouth is suddenly filled with broken teeth and blood. Gain 2 Bleeding Conditions. Lose 1d10 teeth - Amputation (Easy)"],
+    ["5", "Mangled Ear", "4", "Little is left of your ear as the blow tears it apart. You gain 3 Deafened and 2 Bleeding Conditions. Lose your ear - Amputation (Average)"],
+    ["3", "Devastated Eye", "5", "A strike to your eye completely bursts it, causing extraordinary pain. Gain 3 Blinded, 2 Bleeding, and 1 Stunned Condition. Lose your eye - Amputation (Difficult)"],
+    ["3", "Disfiguring Blow", "5", "The blow smashes your entire face, destroying your eye and nose in a cloud of blood. Gain 3 Bleeding, 3 Blinded and 2 Stunned Conditions. Lose your eye and nose - Amputation (Hard)"],
+    ["3", "Mangled Jaw", "5", "The blow almost removes your jaw as it utterly destroys your tongue, sending teeth flying in a shower of blood. Gain 4 Bleeding and 3 Stunned Conditions. Make a Very Hard (-30) Endurance Test or gain an Unconscious Condition. Suffer a Broken Bone (Major) injury and lose your tongue and 1d10 teeth - Amputation (Hard)"],
     ["1", "Decapitated", "Death", "Your head is entirely severed from your neck and soars through the air, landing 1d10 feet away in a random direction (see Scatter). Your body collapses, instantly dead"]
 ];
 
@@ -36,11 +36,11 @@ var Arm = [
     ["5", "Damaged Artery", "4", "Gain 4 Bleeding Conditions. Until you receive Surgery, every time you take Damage to this Arm Hit Location gain 2 Bleeding Conditions"],
     ["5", "Crushed Elbow", "4", "The blow crushes your elbow, splintering bone and cartilage. You immediately drop whatever was held in that hand and gain a Broken Bone (Major) injury"],
     ["5", "Dislocated Shoulder", "4", "Your arm is wrenched out of its socket. Pass a Hard (-20) Endurance Test or gain the Stunned and Prone Condition. Drop whatever is held in that hand: the arm is useless and counts as lost (see Amputated Part). Gain 1 Stunned Condition until you receive Medical Attention. After this initial Medical Attention, an Extended Average (+20) Heal Test needing 6 SL is required to reset the arm, at which point you regain its use. Tests made using this arm suffer a -10 penalty for 1d10 days"],
-    ["5", "Severed Finger", "4", "You gape in horror as a finger flies — Amputation (Average). Gain a Bleeding condition"],
-    ["5", "Cleft Hand", "5", "Your hand splays open from the blow. Lose 1 finger — Amputation (Difficult). Gain 2 Bleeding and 1 Stunned Condition. For every succeeding Round in which you don't receive Medical Attention, you lose another finger as the wound tears; if you run out of fingers, you lose the hand — Amputation (Difficult)"],
+    ["5", "Severed Finger", "4", "You gape in horror as a finger flies - Amputation (Average). Gain a Bleeding condition"],
+    ["5", "Cleft Hand", "5", "Your hand splays open from the blow. Lose 1 finger - Amputation (Difficult). Gain 2 Bleeding and 1 Stunned Condition. For every succeeding Round in which you don't receive Medical Attention, you lose another finger as the wound tears; if you run out of fingers, you lose the hand - Amputation (Difficult)"],
     ["3", "Mauled Bicep", "5", "The blow almost separates bicep and tendon from bone, leaving an ugly wound that sprays blood over you and your opponent. You automatically drop anything held in the associated hand and suffers a Torn Muscle (Major) injury and 2 Bleeding and 1 Stunned Condition"],
-    ["3", "Mangled Hand", "5", "Your hand is left a mauled, bleeding mess. You lose your hand — Amputation (Hard). Gain 2 Bleeding Condition. Take a Hard (-20) Endurance Test or gain the Stunned and Prone Conditions"],
-    ["3", "Sliced Tendon", "5", "Your tendons are cut by the blow, leaving your arm hanging useless — Amputation (Very Hard). Gain 3 Bleeding, 1 Prone, and 1 Stunned Condition. Pass a Hard (-20) Endurance Test or gain the Unconscious Condition"],
+    ["3", "Mangled Hand", "5", "Your hand is left a mauled, bleeding mess. You lose your hand - Amputation (Hard). Gain 2 Bleeding Condition. Take a Hard (-20) Endurance Test or gain the Stunned and Prone Conditions"],
+    ["3", "Sliced Tendon", "5", "Your tendons are cut by the blow, leaving your arm hanging useless - Amputation (Very Hard). Gain 3 Bleeding, 1 Prone, and 1 Stunned Condition. Pass a Hard (-20) Endurance Test or gain the Unconscious Condition"],
     ["1", "Brutal Dismemberment", "Death", "Your arm is severed, spraying arterial blood 1d10 feet in a random direction (see Scatter), before the blow follows through to your chest"]
 ];
 
@@ -75,7 +75,7 @@ var Leg = [
     ["5", "Thigh Strike", "2", "A painful blow slams into your upper thigh. Gain a Bleeding Condition and take an Average (+20) Endurance Test or stumble, gaining the Prone Condition"],
     ["5", "Sprained Ankle", "2", "You sprain your ankle, giving you a Torn Muscle (Minor) injury"],
     ["5", "Twisted Knee", "2", "You twist your knee too far. Agility Tests suffer a -20 penalty for 1d10 rounds"],
-    ["5", "Badly Cut Toe", "2", "Gain 1 Bleeding Condition. After the encounter, make a Challenging (+0) Endurance Test. If you fail, lose 1 toe —Amputation (Average)"],
+    ["5", "Badly Cut Toe", "2", "Gain 1 Bleeding Condition. After the encounter, make a Challenging (+0) Endurance Test. If you fail, lose 1 toe -Amputation (Average)"],
     ["5", "Bad Cut", "3", "Gain 2 Bleeding conditions as a deep wound opens up your shin. Pass a Challenging (+0) Endurance Test or gain the Prone Condition"],
     ["5", "Badly Twisted Knee", "3", "You badly twist your knee trying to avoid your opponent. Gain a Torn Muscle (Major) injury"],
     ["5", "Hacked Leg", "3", "A cut bites down into the hip. Gain 1 Prone and 2 Bleeding Conditions, and suffer a Broken Bone (Minor) injury. Further, take a Hard (-20) Endurance Test or also gain a Stunned condition from the pain"],
@@ -84,9 +84,9 @@ var Leg = [
     ["5", "Carved Shif", "4", "The weapon drives clean through your leg by the knee, slicing into bone and through tendons. Gain a Stunned and Prone Condition. Further, suffer a Torn Muscle (Major) and Broken Bone (Minor) injury"],
     ["5", "Broken Knee", "4", "The blow hacks into your kneecap, shattering it into several pieces. You gain 1 Bleeding, 1 Prone, and 1 Stunned Condition, and a Broken Bone (Major) Injury as you fall to the ground, clutching your ruined leg"],
     ["5", "Dislocated Knee", "4", "Your knee is wrenched out of its socket. Gain the Prone Condition. Pass a Hard (-20) Endurance Test, or gain the Stunned Condition, which is not removed until you receive Medical Attention. After this initial Medical Attention, an Extended Average (+20) Heal Test needing 6 SL is required to reset the knee at which point you regain its use. Movement is halved, and Tests made using this leg suffer a -10 penalty for d10 days"],
-    ["3", "Crushed Foot", "5", "The blow crushes your foot. Make an Average (+20) Endurance Test; if you fail, gain the Prone condition and lose 1 toe, plus 1 additional toe for each SL below 0 — Amputation (Average). Gain 2 Bleeding Conditions. If you don't receive Surgery within 1d10 days, you will lose the foot entirely"],
-    ["3", "Severed Foot", "5", "Your foot is severed at the ankle and lands 1d10 feet away in a random direction — Amputation (Hard) (see Scatter). You gain 3 Bleeding, 2 Stunned, and 1 Prone Condition"],
-    ["3", "Cut Tendon", "5", "A major tendon at the back of your leg is cut, causing you to scream out in pain as your leg collapses. Gain 2 Bleeding, 2 Stunned, and 1 Prone Condition and look on in horror as your leg never works again — Amputation (Very Hard)"],
+    ["3", "Crushed Foot", "5", "The blow crushes your foot. Make an Average (+20) Endurance Test; if you fail, gain the Prone condition and lose 1 toe, plus 1 additional toe for each SL below 0 - Amputation (Average). Gain 2 Bleeding Conditions. If you don't receive Surgery within 1d10 days, you will lose the foot entirely"],
+    ["3", "Severed Foot", "5", "Your foot is severed at the ankle and lands 1d10 feet away in a random direction - Amputation (Hard) (see Scatter). You gain 3 Bleeding, 2 Stunned, and 1 Prone Condition"],
+    ["3", "Cut Tendon", "5", "A major tendon at the back of your leg is cut, causing you to scream out in pain as your leg collapses. Gain 2 Bleeding, 2 Stunned, and 1 Prone Condition and look on in horror as your leg never works again - Amputation (Very Hard)"],
     ["1", "Shattered Pelvis", "Death", "The blow shatters your pelvis, severing one leg then driving through to the next. You die instantly from traumatic shock"]
 ];
 
