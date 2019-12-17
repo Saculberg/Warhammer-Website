@@ -137,5 +137,3 @@ function getCritical(mod) {
     document.getElementById("wou").innerHTML = ("Wounds: " + wounds);
     document.getElementById("loc").innerHTML = loc;
 }
-
-getCritical(0);
