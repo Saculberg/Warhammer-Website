@@ -119,10 +119,10 @@ function getHitLocation() {
 function getCritical(mod) {
     [loc, arrayIndex] = getHitLocation();
     var array = hitLocations[parseInt(arrayIndex)];
-    var x = Math.max(1, Math.floor(Math.random() * 100) + 1 - mod);
+    var x = Math.max(1, Math.floor(Math.random() * 100) + 1 + mod);
     var i;
     var acc = 0;
-    var [description, wounds, effects] = ["hej", "svejs", "då"];
+    var [description, wounds, effects] = [x, x, mod];
 
     for (i = 0; i < array.length; i++) {
         var [a, b, c, d] = array[i];
