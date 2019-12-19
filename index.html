@@ -56,6 +56,15 @@
 				font-size:calc(15px + 1vmax);
 				text-align: center;
 			}
+			a
+			{
+				text-color: black;
+				text-decoration: none;
+			}
+			a:hover
+			{
+				background-color: #ba255e;
+			}
 			.wounds
 			{
 				float: right;
@@ -110,6 +119,15 @@
 			{
 				background-color: #8f1d48;
 			}
+			#hover
+			{
+				position: absolute;
+				left: 0;
+				top: 0;
+				background-color: red;
+				width: auto;
+				height: auto;
+			}
 		</style>
 	</head>
 	<body font-family="Times New Roman">
@@ -119,7 +137,7 @@
 					Hit Location.
 				</div>
 				<div id="eff" class="effects">
-					The Effect Of The Critical.
+					The Effect Of The Critical. <a onmousemove="conditionDesc(event)">10d10</a>
 				</div>
 				<div>
 					<div id="desc" class="description">
@@ -143,7 +161,10 @@
 					Roll Critical(-20)
 				</span>
 			</div>
+
+		<div id="hover"></div>
 		</div>
+
 		<script src="scrpt.js">
 		</script>
 	</body>
