@@ -209,11 +209,15 @@ function conditionDesc(event, content){
     ob.style.width = "20vmax";
     ob.style.height = "auto";
 
-    ob.style.left = Math.min(xpos + 10, document.documentElement.clientWidth - ob.offsetWidth - 5) + "px";
-    ob.style.top = Math.min(ypos + 10, document.documentElement.clientHeight - ob.offsetHeight - 5) + "px";
+    //ob.style.left = Math.min(xpos + 10, document.documentElement.clientWidth - ob.offsetWidth - 5) + "px";
+    //ob.style.top = Math.min(ypos + 10, document.documentElement.clientHeight - ob.offsetHeight - 5) + "px";
     
-    ob.style.opacity = 1;
-
+    
     ob.innerHTML = content;
 
+    setTimeout(function(){ 
+    ob.style.opacity = 1;
+    ob.style.left = Math.min(xpos + 10, document.documentElement.clientWidth - ob.offsetWidth - 5) + "px";
+    ob.style.top = Math.min(ypos + 10, document.documentElement.clientHeight - ob.offsetHeight - 5) + "px";
+    }, 1);
 }
