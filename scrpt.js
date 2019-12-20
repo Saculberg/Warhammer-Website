@@ -68,7 +68,7 @@ var Body = [
 ];
 
 var Leg = [
-    [10, "Stubbed Toe", "1", "In the scuffle, you stub your toe. Pass a Routine (+20) Endurance Test or suffer -10 on Agility Tests until the end of the next turn"],
+    [10, "Stubbed Toe", "1", "In the scuffle, you stub your toe. Pass a Average (+20) Endurance Test or suffer -10 on Agility Tests until the end of the next turn"],
     [10, "Twisted Ankle", "1", "You go over your ankle, hurting it. Agility Tests suffer a -10 penalty for <a onclick=\"rollDie(this)\">1d10</a> rounds"],
     [5, "Minor Cut", "1", "Gain 1 <a onmouseleave=\"conditionDescRem()\" onmousemove=\"conditionDesc(event, getCondDesc(this))\">Bleeding</a> Condition"],
     [5, "Lost Footing", "1", "In the scuffle you lose your footing. Pass a Challenging (+0) Endurance Test or gain the <a onmouseleave=\"conditionDescRem()\" onmousemove=\"conditionDesc(event, getCondDesc(this))\">Prone</a> Condition"],
