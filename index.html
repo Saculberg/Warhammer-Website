@@ -121,12 +121,23 @@
 			}
 			#hover
 			{
+				padding: 0.5vw;
+				background-color: white;
 				position: absolute;
-				left: 0;
-				top: 0;
-				background-color: red;
-				width: auto;
-				height: auto;
+				opacity: 0;
+				border-color: #8f1d48;
+				overflow: hidden;
+				border-style: solid;
+				border-radius: 5px;
+				width: 0px;
+				height: 0px;
+			}
+			h3
+			{
+				color: #8f1d48;
+				margin: 1vh;
+				margin-top: 0px;
+				margin-left: 0px;
 			}
 		</style>
 	</head>
@@ -137,7 +148,7 @@
 					Hit Location.
 				</div>
 				<div id="eff" class="effects">
-					The Effect Of The Critical. <a onmousemove="conditionDesc(event)">10d10</a>
+					The Effect Of The Critical. asdfasdfdasdfasdasd <a onmouseleave="conditionDescRem()" onmousemove="conditionDesc(event, getCondDesc(this))">Unconscious</a>
 				</div>
 				<div>
 					<div id="desc" class="description">
@@ -162,9 +173,11 @@
 				</span>
 			</div>
 
-		<div id="hover"></div>
 		</div>
-
+		
+		<div id="hover">
+			
+		</div>
 		<script src="scrpt.js">
 		</script>
 	</body>
