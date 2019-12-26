@@ -19,9 +19,17 @@ $('#input1').on('change', function(e) {
     }
 });
 
+const selectElement = document.getElementById("input1");
+
+
+selectElement.addEventListener('change', (event) => {
+    document.getElementById("button1").innerHTML = prompt("Please enter a name", "default");
+});
+
+
 $("#button1").click(function () {
     $("#input1").trigger('click');
-    this.innerHTML = prompt("Please enter a name", "default");
+    //this.innerHTML = prompt("Please enter a name", "default");
     //setTimeout(function(){ 
     //    this.innerHTML = prompt("Please enter a name", "default");
     //}, 1);
