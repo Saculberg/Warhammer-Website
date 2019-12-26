@@ -36,7 +36,7 @@ const selectElement = document.getElementById("input1");
 
 
 selectElement.addEventListener('change', (event) => {
-    document.getElementById("button1").innerHTML = prompt("Please enter a name", "default");
+    document.getElementById("button1").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", "default") + "</div>";
 });
 
 
