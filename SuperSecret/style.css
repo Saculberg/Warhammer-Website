@@ -49,6 +49,8 @@ td{
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
+    pointer-events: none;
+
 }
 
 .button {
