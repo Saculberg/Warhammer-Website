@@ -42,7 +42,7 @@ th{
     text-align: center;
     line-height: 15vw;
 	border-radius: 15px;
-    font-size:calc(15px + 1vmax);
+    font-size:calc(15px + 1vw);
     background-color: #ba255e;
     margin: auto;
     -webkit-touch-callout: none;
