@@ -1,4 +1,17 @@
-﻿var $audio1 = $('#myAudio1');
+﻿function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
+var $audio1 = $('#myAudio1');
 var button1 = document.getElementById("button1");
 
 $('#input1').on('change', function(e) {
@@ -29,14 +42,8 @@ selectElement.addEventListener('change', (event) => {
 
 $("#button1").click(function () {
     $("#input1").trigger('click');
-    //this.innerHTML = prompt("Please enter a name", "default");
-    //setTimeout(function(){ 
-    //    this.innerHTML = prompt("Please enter a name", "default");
-    //}, 1);
 });
 
-var slide1 = document.getElementById('slider1')
-
-slide1.oninput = function() {
+document.getElementById('slider1').oninput = function() {
     document.getElementById('myAudio1').volume = this.value; 
 }
