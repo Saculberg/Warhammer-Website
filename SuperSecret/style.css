@@ -2,7 +2,7 @@ html{font-family:sans-serif}
 
 header{padding:0px;margin:0px;}
 
-body{padding:0px;margin:0px;}
+body{padding:0px;margin:0px;overscroll-behavior-y: contain;}
 
 table{
     width:100%;
