@@ -7,16 +7,6 @@
 <body>
 	<table>
 		<tr>
-		<th></th>
-		<th></th>
-		<th></th>
-		<th></th>
-		<th></th>
-		<th></th>
-		<th></th>
-		<th></th>
-		</tr>
-		<tr>
 			<td>
 				<div class="buttonContainer"><div id="button1" class="button"><div class="buttonText">Undefined</div></div></div>
 	
@@ -83,8 +73,35 @@
 			</td>
 		</tr>
 
-		
 	</table>
+	<table id="sndTable">
+		<tr id="sndRow">
+			<td>
+				<div class="buttonContainer"><div id="prefabButton1" class="button" onclick="prefabCall(0)"><div class="buttonText">Undefined</div></div></div>
+			</td>
+			<td>
+				<div class="buttonContainer"><div id="prefabButton2" class="button" onclick="prefabCall(1)"><div class="buttonText">Undefined</div></div></div>
+			</td>
+			<td>
+				<div class="buttonContainer"><div id="prefabButton3" class="button" onclick="prefabCall(2)"><div class="buttonText">Undefined</div></div></div>
+			</td>
+			<td>
+				<div class="buttonContainer"><div id="prefabButton4" class="button" onclick="prefabCall(3)"><div class="buttonText">Undefined</div></div></div>
+			</td>
+		</tr>
+	</table>
+
+	<table id="trdTable">
+		<tr id="trdRow">
+			<td>
+				<div class="buttonContainer"><div id="save" class="button" onclick="save()"><div class="buttonText">Save</div></div></div>
+			</td>
+			<td>
+				<div class="buttonContainer"><div id="load" class="button" onclick="load()"><div class="buttonText">Load</div></div></div>
+			</td>
+		</tr>
+	</table>
+	<input type="file" id="inputLoad" style="display:none" accept=".txt">
 	<script src="Scripts/main.js"></script>
 </body>
 </html>

@@ -17,13 +17,7 @@ table{
 tr{
     padding: 0px;
     margin: 0px;
-}
-
-th{
-    padding:0px;
-    margin:0px;
-    height:0px;
-    width:0px;
+    height:60vh;
 }
 
 td{
@@ -32,8 +26,22 @@ td{
     position: relative;
     padding: 0px;
     margin: 0px;
-    height:60vh;
-    width:100px;
+}
+
+#sndRow{
+    height:20vh;
+}
+
+#sndTable{
+    top:60vh;
+}
+
+#trdRow{
+    height:19vh;
+}
+
+#trdTable{
+    top:80vh;
 }
 
 .buttonContainer {
