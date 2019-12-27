@@ -1,0 +1,75 @@
+body {
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+	opacity:initial;
+}
+
+#statTable {
+	text-align:left;
+}
+
+#statTable td {
+	width: 2vw;
+}
+
+	#statTable input {
+		width: 2vw;
+		background-color: transparent;
+		border:none;
+		font-size:inherit;
+	}
+
+	#statTable td, th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 2px;
+	}
+
+	#statTable tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+
+#selectionBar {
+	width:100%;
+	height: 10vh;
+	background-color:aliceblue;
+	padding:0px;
+}
+
+.selectionBarItem {
+	width: calc(100%/5);
+	padding: 0px;
+	margin: auto;
+	text-align: center;
+	background-color: grey;
+	opacity: 0.7;
+	color: black;
+	font-size: 1.2em;
+	transition: opacity 0.2s ease-in-out;
+}
+
+	.selectionBarItem:first-letter {
+		color:darkred;
+		font-size:larger;
+	}
+
+	.selectionBarItem:hover {
+		opacity: 1;
+	}
+
+#content {
+	background-color:lightblue;
+	width:99%;
+	height:calc(100% - 10vh - 1%);
+	margin:auto;
+	transform: translateY(0.5%);
+}
+
+#sheet {
+	width: 60vw;
+	height: 100vw;
+	background-color: dimgrey;
+	margin:auto;
+}
