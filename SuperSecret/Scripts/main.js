@@ -319,7 +319,6 @@ function linearProgress(start, end, progress){
     return (1-amt)*start+amt*end
 }
 
-var isLoadingPrefab = false;
 
 function loadPrefab(target, start, progress){
     
@@ -330,7 +329,7 @@ function loadPrefab(target, start, progress){
     if(progress < 100)
         setTimeout(() => loadPrefab(target, start, progress + 1), 5);
     else
-        isLoadingPrefab = false;
+        tem = true
 }
 
 var prefabIsSet = [
@@ -345,15 +344,14 @@ var prefabs = [
     [0,0,0,0,0,0,0,0],
     [0,0,0,0,0,0,0,0]
 ];
-
+var tem = true;
 function prefabCall(index){
-
-    if(prefabIsSet[index])
-        if(!isLoadingPrefab)
-        {
-            isLoadingPrefab = true;
+    if(prefabIsSet[index]){
+        if(tem){
+            tem = false;
             loadPrefab(prefabs[index], getCurrentValue(), 0);
-		}
+        }
+	}
     else{
         prefabIsSet[index] = true;
 
