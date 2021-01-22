@@ -11,24 +11,12 @@
     document.body.removeChild(element);
 }
 
-var $audio1 = $('#myAudio1');
-var button1 = document.getElementById("button1");
-
-$('#input1').on('change', function(e) {
-    
-    var reader = new FileReader();
-  
-    console.log($audio1[0]);
-    if (e.currentTarget.files && e.currentTarget.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            $audio1.attr('src', e.target.result);
-            $audio1.play();
-            
-        }
-        reader.readAsDataURL(e.currentTarget.files[0]);
-    }
-});
+input1.onchange = function () {
+    var files = this.files;
+    var file = URL.createObjectURL(files[0]);
+    myAudio1.src = file;
+    myAudio1.play();
+};
 
 const selectElement1 = document.getElementById("input1");
 
@@ -47,24 +35,12 @@ document.getElementById('slider1').oninput = function() {
     document.getElementById('myAudio1').volume = this.value; 
 }
 
-var $audio2 = $('#myAudio2');
-var button2 = document.getElementById("button2");
-
-$('#input2').on('change', function(e) {
-    
-    var reader = new FileReader();
-  
-    console.log($audio2[0]);
-    if (e.currentTarget.files && e.currentTarget.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            $audio2.attr('src', e.target.result);
-            $audio2.play();
-            
-        }
-        reader.readAsDataURL(e.currentTarget.files[0]);
-    }
-});
+input2.onchange = function () {
+    var files = this.files;
+    var file = URL.createObjectURL(files[0]);
+    myAudio2.src = file;
+    myAudio2.play();
+};
 
 const selectElement2 = document.getElementById("input2");
 
@@ -83,26 +59,13 @@ document.getElementById('slider2').oninput = function() {
     document.getElementById('myAudio2').volume = this.value; 
 }
 
-var $audio3 = $('#myAudio3');
-var button3 = document.getElementById("button3");
+input3.onchange = function () {
+    var files = this.files;
+    var file = URL.createObjectURL(files[0]);
+    myAudio3.src = file;
+    myAudio3.play();
+};
 
-$('#input3').on('change', function(e) {
-    
-    var reader = new FileReader();
-  
-    console.log($audio3[0]);
-    if (e.currentTarget.files && e.currentTarget.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-
-            $audio3.attr('src', e.target.result);
-            $audio3.play();
-            
-            
-        }
-        reader.readAsDataURL(e.currentTarget.files[0]);
-    }
-});
 
 const selectElement3 = document.getElementById("input3");
 
@@ -121,24 +84,12 @@ document.getElementById('slider3').oninput = function() {
     document.getElementById('myAudio3').volume = this.value; 
 }
 
-var $audio4 = $('#myAudio4');
-var button4 = document.getElementById("button4");
-
-$('#input4').on('change', function(e) {
-    
-    var reader = new FileReader();
-  
-    console.log($audio4[0]);
-    if (e.currentTarget.files && e.currentTarget.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            $audio4.attr('src', e.target.result);
-            $audio4.play();
-            
-        }
-        reader.readAsDataURL(e.currentTarget.files[0]);
-    }
-});
+input4.onchange = function () {
+    var files = this.files;
+    var file = URL.createObjectURL(files[0]);
+    myAudio4.src = file;
+    myAudio4.play();
+};
 
 const selectElement4 = document.getElementById("input4");
 
@@ -157,24 +108,13 @@ document.getElementById('slider4').oninput = function() {
     document.getElementById('myAudio4').volume = this.value; 
 }
 
-var $audio5 = $('#myAudio5');
-var button5 = document.getElementById("button5");
+input5.onchange = function () {
+    var files = this.files;
+    var file = URL.createObjectURL(files[0]);
+    myAudio5.src = file;
+    myAudio5.play();
+};
 
-$('#input5').on('change', function(e) {
-    
-    var reader = new FileReader();
-  
-    console.log($audio5[0]);
-    if (e.currentTarget.files && e.currentTarget.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            $audio5.attr('src', e.target.result);
-            $audio5.play();
-            
-        }
-        reader.readAsDataURL(e.currentTarget.files[0]);
-    }
-});
 
 const selectElement5 = document.getElementById("input5");
 
@@ -193,24 +133,13 @@ document.getElementById('slider5').oninput = function() {
     document.getElementById('myAudio5').volume = this.value; 
 }
 
-var $audio6 = $('#myAudio6');
-var button6 = document.getElementById("button6");
+input6.onchange = function () {
+    var files = this.files;
+    var file = URL.createObjectURL(files[0]);
+    myAudio6.src = file;
+    myAudio6.play();
+};
 
-$('#input6').on('change', function(e) {
-    
-    var reader = new FileReader();
-  
-    console.log($audio6[0]);
-    if (e.currentTarget.files && e.currentTarget.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            $audio6.attr('src', e.target.result);
-            $audio6.play();
-            
-        }
-        reader.readAsDataURL(e.currentTarget.files[0]);
-    }
-});
 
 const selectElement6 = document.getElementById("input6");
 
@@ -229,24 +158,13 @@ document.getElementById('slider6').oninput = function() {
     document.getElementById('myAudio6').volume = this.value; 
 }
 
-var $audio7 = $('#myAudio7');
-var button7 = document.getElementById("button7");
+input7.onchange = function () {
+    var files = this.files;
+    var file = URL.createObjectURL(files[0]);
+    myAudio7.src = file;
+    myAudio7.play();
+};
 
-$('#input7').on('change', function(e) {
-    
-    var reader = new FileReader();
-  
-    console.log($audio7[0]);
-    if (e.currentTarget.files && e.currentTarget.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            $audio7.attr('src', e.target.result);
-            $audio7.play();
-            
-        }
-        reader.readAsDataURL(e.currentTarget.files[0]);
-    }
-});
 
 const selectElement7 = document.getElementById("input7");
 
@@ -265,24 +183,13 @@ document.getElementById('slider7').oninput = function() {
     document.getElementById('myAudio7').volume = this.value; 
 }
 
-var $audio8 = $('#myAudio8');
-var button8 = document.getElementById("button8");
+input8.onchange = function () {
+    var files = this.files;
+    var file = URL.createObjectURL(files[0]);
+    myAudio8.src = file;
+    myAudio8.play();
+};
 
-$('#input8').on('change', function(e) {
-    
-    var reader = new FileReader();
-  
-    console.log($audio8[0]);
-    if (e.currentTarget.files && e.currentTarget.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            $audio8.attr('src', e.target.result);
-            $audio8.play();
-            
-        }
-        reader.readAsDataURL(e.currentTarget.files[0]);
-    }
-});
 
 const selectElement8 = document.getElementById("input8");
 

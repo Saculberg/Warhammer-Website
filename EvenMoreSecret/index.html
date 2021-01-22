@@ -1,110 +1,25 @@
 <!doctype html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="newStyle.css">
 </head>
 <body>
-	<div id="sheet">
-		<table id="selectionBar">
+	<div class="center" id="test" onload="main()">
+		<table>
 			<tr>
-				<td class="selectionBarItem">
-					<p>Main</p>
-				</td>
-				<td class="selectionBarItem">
-					<p>Skills And Talents</p>
-				</td>
-				<td class="selectionBarItem">
-					<p>Trappings</p>
-				</td>
-				<td class="selectionBarItem">
-					<p>Spells And Prayers</p>
-				</td>
-				<td class="selectionBarItem">
-					<p>Information</p>
-				</td>
+				<th>
+					<div class="button"><h1>Load <br> Character</h1></div>
+				</th>
+				<th>
+					<div class="button"><h1>Create <br> Character</h1></div>
+				</th>
+				<th>
+					<div class="button" onclick="setCharacterAsRandom(); displayCharacter()"><h1>Random <br> Character</h1></div>
+				</th>
 			</tr>
 		</table>
-		<div id="content">
-			<div id="generalInformation">
-
-			</div>
-			<table id="statTable">
-				<tr>
-					<th>
-
-					</th>
-					<th>
-						WS
-					</th>
-					<th>
-						BS
-					</th>
-					<th>
-						S
-					</th>
-					<th>
-						T
-					</th>
-					<th>
-						I
-					</th>
-					<th>
-						Ag
-					</th>
-					<th>
-						Dex
-					</th>
-					<th>
-						Int
-					</th>
-					<th>
-						WP
-					</th>
-					<th>
-						Fel
-					</th>
-				</tr>
-				<tr>
-					<th>Initial</th>
-					<td id="initialWS">0</td>
-					<td id="initialBS">0</td>
-					<td id="initialS">0</td>
-					<td id="initialT">0</td>
-					<td id="initialI">0</td>
-					<td id="initialAg">0</td>
-					<td id="initialDex">0</td>
-					<td id="initialInt">0</td>
-					<td id="initialWP">0</td>
-					<td id="initialFel">0</td>
-				</tr>
-				<tr>
-					<th>Advances</th>
-					<td id="advancesWS"><input type="number" value="0"/></td>
-					<td id="advancesBS"><input type="number" value="0" /></td>
-					<td id="advancesS"><input type="number" value="0" /></td>
-					<td id="advancesT"><input type="number" value="0" /></td>
-					<td id="advancesI"><input type="number" value="0" /></td>
-					<td id="advancesAg"><input type="number" value="0" /></td>
-					<td id="advancesDex"><input type="number" value="0" /></td>
-					<td id="advancesInt"><input type="number" value="0" /></td>
-					<td id="advancesWP"><input type="number" value="0" /></td>
-					<td id="advancesFel"><input type="number" value="0" /></td>
-				</tr>
-				<tr>
-					<th>Current</th>
-					<td id="currentWS">0</td>
-					<td id="currentBS">0</td>
-					<td id="currentS">0</td>
-					<td id="currentT">0</td>
-					<td id="currentI">0</td>
-					<td id="currentAg">0</td>
-					<td id="currentDex">0</td>
-					<td id="currentInt">0</td>
-					<td id="currentWP">0</td>
-					<td id="currentFel">0</td>
-				</tr>
-			</table>
-		</div>
-	</div> 
+	</div>
+	<div id="hover"></div>
+	<script src="Scripts/Main.js"></script>
 </body>
 </html>

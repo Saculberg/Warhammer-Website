@@ -200,8 +200,8 @@ function conditionDescRem(){
 function conditionDesc(event, content){
         
     var str = "";
-    xpos = event.pageX - document.body.scrollLeft;
-    ypos = event.pageY - document.body.scrollTop;
+    var xpos = event.pageX - document.body.scrollLeft;
+    var ypos = event.pageY - document.body.scrollTop;
 
     var ob = document.getElementById("hover");
     

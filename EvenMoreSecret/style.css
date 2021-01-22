@@ -6,13 +6,36 @@ p {
 	opacity:initial;
 }
 
+#generalInformation {
+	width:100%;
+	height: 20vh;
+	margin: 0px;
+	padding: 0px;
+}
+	#generalInformation div {
+		display: inline;
+		font-size: inherit;
+		padding:0px;
+		margin:0px;
+	}
+
+	#generalInformation tr, td {
+		padding: 0px;
+		margin: 0px;
+		border: 1px solid black;
+	}
+
+	#generalInformation tr{
+		height:1vh;
+	}
+
 #statTable {
-	text-align:left;
+	text-align: left;
 }
 
-#statTable td {
-	width: 2vw;
-}
+	#statTable td {
+		width: 2vw;
+	}
 
 	#statTable input {
 		width: 2vw;
@@ -34,7 +57,7 @@ p {
 #selectionBar {
 	width:100%;
 	height: 10vh;
-	background-color:aliceblue;
+	background-color:transparent;
 	padding:0px;
 }
 
@@ -60,7 +83,7 @@ p {
 	}
 
 #content {
-	background-color:lightblue;
+	background-color:transparent;
 	width:99%;
 	height:calc(100% - 10vh - 1%);
 	margin:auto;
