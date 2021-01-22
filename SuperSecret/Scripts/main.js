@@ -11,9 +11,13 @@
     document.body.removeChild(element);
 }
 
+var n = "deafault";
+
 input1.onchange = function () {
     var files = this.files;
     var file = URL.createObjectURL(files[0]);
+    var t = this.value.split('\\');
+    n = t[t.length - 1].split('.')[0];
     myAudio1.src = file;
     myAudio1.play();
 };
@@ -22,7 +26,8 @@ const selectElement1 = document.getElementById("input1");
 
 
 selectElement1.addEventListener('change', (event) => {
-    document.getElementById("button1").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", "default") + "</div>";
+    document.getElementById('myAudio1').volume = 0;
+    document.getElementById("button1").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", n) + "</div>";
     document.getElementById('myAudio1').volume = document.getElementById('slider1').value;
 });
 
@@ -38,6 +43,8 @@ document.getElementById('slider1').oninput = function() {
 input2.onchange = function () {
     var files = this.files;
     var file = URL.createObjectURL(files[0]);
+    var t = this.value.split('\\');
+    n = t[t.length - 1].split('.')[0];
     myAudio2.src = file;
     myAudio2.play();
 };
@@ -46,7 +53,8 @@ const selectElement2 = document.getElementById("input2");
 
 
 selectElement2.addEventListener('change', (event) => {
-    document.getElementById("button2").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", "default") + "</div>";
+    document.getElementById('myAudio2').volume = 0;
+    document.getElementById("button2").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", n) + "</div>";
     document.getElementById('myAudio2').volume = document.getElementById('slider2').value;
 });
 
@@ -62,6 +70,8 @@ document.getElementById('slider2').oninput = function() {
 input3.onchange = function () {
     var files = this.files;
     var file = URL.createObjectURL(files[0]);
+    var t = this.value.split('\\');
+    n = t[t.length - 1].split('.')[0];
     myAudio3.src = file;
     myAudio3.play();
 };
@@ -71,7 +81,8 @@ const selectElement3 = document.getElementById("input3");
 
 
 selectElement3.addEventListener('change', (event) => {
-    document.getElementById("button3").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", "default") + "</div>";
+    document.getElementById('myAudio3').volume = 0;
+    document.getElementById("button3").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", n) + "</div>";
     document.getElementById('myAudio3').volume = document.getElementById('slider3').value;
 });
 
@@ -87,6 +98,8 @@ document.getElementById('slider3').oninput = function() {
 input4.onchange = function () {
     var files = this.files;
     var file = URL.createObjectURL(files[0]);
+    var t = this.value.split('\\');
+    n = t[t.length - 1].split('.')[0];
     myAudio4.src = file;
     myAudio4.play();
 };
@@ -95,7 +108,8 @@ const selectElement4 = document.getElementById("input4");
 
 
 selectElement4.addEventListener('change', (event) => {
-    document.getElementById("button4").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", "default") + "</div>";
+    document.getElementById('myAudio4').volume = 0;
+    document.getElementById("button4").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", n) + "</div>";
     document.getElementById('myAudio4').volume = document.getElementById('slider4').value;
 });
 
@@ -111,6 +125,8 @@ document.getElementById('slider4').oninput = function() {
 input5.onchange = function () {
     var files = this.files;
     var file = URL.createObjectURL(files[0]);
+    var t = this.value.split('\\');
+    n = t[t.length - 1].split('.')[0];
     myAudio5.src = file;
     myAudio5.play();
 };
@@ -120,7 +136,8 @@ const selectElement5 = document.getElementById("input5");
 
 
 selectElement5.addEventListener('change', (event) => {
-    document.getElementById("button5").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", "default") + "</div>";
+    document.getElementById('myAudio5').volume = 0;
+    document.getElementById("button5").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", n) + "</div>";
     document.getElementById('myAudio5').volume = document.getElementById('slider5').value;
 });
 
@@ -136,6 +153,8 @@ document.getElementById('slider5').oninput = function() {
 input6.onchange = function () {
     var files = this.files;
     var file = URL.createObjectURL(files[0]);
+    var t = this.value.split('\\');
+    n = t[t.length - 1].split('.')[0];
     myAudio6.src = file;
     myAudio6.play();
 };
@@ -145,7 +164,8 @@ const selectElement6 = document.getElementById("input6");
 
 
 selectElement6.addEventListener('change', (event) => {
-    document.getElementById("button6").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", "default") + "</div>";
+    document.getElementById('myAudio6').volume = 0;
+    document.getElementById("button6").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", n) + "</div>";
     document.getElementById('myAudio6').volume = document.getElementById('slider6').value;
 });
 
@@ -161,6 +181,8 @@ document.getElementById('slider6').oninput = function() {
 input7.onchange = function () {
     var files = this.files;
     var file = URL.createObjectURL(files[0]);
+    var t = this.value.split('\\');
+    n = t[t.length - 1].split('.')[0];
     myAudio7.src = file;
     myAudio7.play();
 };
@@ -170,7 +192,8 @@ const selectElement7 = document.getElementById("input7");
 
 
 selectElement7.addEventListener('change', (event) => {
-    document.getElementById("button7").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", "default") + "</div>";
+    document.getElementById('myAudio7').volume = 0;
+    document.getElementById("button7").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", n) + "</div>";
     document.getElementById('myAudio7').volume = document.getElementById('slider7').value;
 });
 
@@ -186,6 +209,8 @@ document.getElementById('slider7').oninput = function() {
 input8.onchange = function () {
     var files = this.files;
     var file = URL.createObjectURL(files[0]);
+    var t = this.value.split('\\');
+    n = t[t.length - 1].split('.')[0];
     myAudio8.src = file;
     myAudio8.play();
 };
@@ -195,7 +220,8 @@ const selectElement8 = document.getElementById("input8");
 
 
 selectElement8.addEventListener('change', (event) => {
-    document.getElementById("button8").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", "default") + "</div>";
+    document.getElementById('myAudio8').volume = 0;
+    document.getElementById("button8").innerHTML = "<div class=\"buttonText\">" + prompt("Please enter a name", n) + "</div>";
     document.getElementById('myAudio8').volume = document.getElementById('slider8').value;
 });
 
