@@ -118,6 +118,12 @@ var condDesc = [
     ["Unconscious","<h3>Unconscious</h3>You are knocked out, asleep, or otherwise insensible. You can do nothing on your turn and are completely unaware of your surroundings. Any Melee attack targeting you automatically hits on the location of the attacker's choice with the maximum possible SL it could score, and also inflicts a Critical Wound; or, if the GM prefers, any close combat hit simply kills you. Any ranged combat hit automatically does the same if the shooter is at Point Blank range.<br><br>The Unconscious Condition does not stack - you are either Unconscious, or you are not - so you do not collect multiple Unconscious Conditions.<br><br>Recovering from unconsciousness requires different circumstances depending upon why you fell unconscious. Refer to Injury on page 172 for more on this. If you spend a Resolve point to remove an Unconscious condition, but have not resolved the cause of the incapacitation, you gain another Unconscious Condition at the end of the round. When you lose the Unconscious Condition, you gain the Prone and Fatigued Conditions."]
 ];
 
+const effectHTML = document.getElementById("effects");
+const descHTML = document.getElementById("description");
+const woundHTML = document.getElementById("wounds");
+const locationHTML = document.getElementById("location");
+const hoverHTML = document.getElementById("hover");
+
 function getCondDesc(ele){
     var s = ele.innerHTML;
     for(var i = 0; i < condDesc.length; i++){
@@ -129,10 +135,10 @@ function getCondDesc(ele){
 }
 
 function rollDie(ele){
-    var str = ele.innerHTML;
-    var amount = 0;
-    var die = 0;
-    var preDie = true;
+    const str = ele.innerHTML;
+    let amount = 0;
+    let die = 0;
+    let preDie = true;
     for(i = 0; i < str.length; i++){
         if(preDie){
             if(str.charAt(i) == 'd')
@@ -181,43 +187,27 @@ function getCritical(mod) {
         }
     }
 
-    document.getElementById("eff").innerHTML = effects + ".";
-    document.getElementById("desc").innerHTML = description;
-    document.getElementById("wou").innerHTML = ("Wounds: " + wounds);
-    document.getElementById("loc").innerHTML = loc;
+    effectHTML.innerHTML = effects + ".";
+    descHTML.innerHTML = description;
+    woundHTML.innerHTML = ("Wounds: " + wounds);
+    locationHTML.innerHTML = loc;
 }
 
 function conditionDescRem(){
-    var ob = document.getElementById("hover");
-    ob.style.opacity = 0;
-    ob.style.left = "0px";
-    ob.style.top = "0px";
-    ob.style.width = "0px";
-    ob.style.height = "0px";
-    ob.innerHTML = "";
+    hoverHTML.style.display = "none";
+    hoverHTML.innerHTML = "";
 }
 
 function conditionDesc(event, content){
-        
-    var str = "";
     var xpos = event.pageX - document.body.scrollLeft;
     var ypos = event.pageY - document.body.scrollTop;
-
-    var ob = document.getElementById("hover");
     
-
-    ob.style.width = "20vmax";
-    ob.style.height = "auto";
-
-    //ob.style.left = Math.min(xpos + 10, document.documentElement.clientWidth - ob.offsetWidth - 5) + "px";
-    //ob.style.top = Math.min(ypos + 10, document.documentElement.clientHeight - ob.offsetHeight - 5) + "px";
+    hoverHTML.style.display = "block";
     
-    
-    ob.innerHTML = content;
+    hoverHTML.innerHTML = content;
 
-    setTimeout(function(){ 
-    ob.style.opacity = 1;
-    ob.style.left = Math.min(xpos + 10, document.documentElement.clientWidth - ob.offsetWidth - 5) + "px";
-    ob.style.top = Math.min(ypos + 10, document.documentElement.clientHeight - ob.offsetHeight - 5) + "px";
-    }, 1);
+    requestAnimationFrame(() => { 
+        hoverHTML.style.left = Math.min(xpos + 10, document.documentElement.clientWidth - hoverHTML.offsetWidth - 5) + "px";
+        hoverHTML.style.top = Math.min(ypos + 10, document.documentElement.clientHeight - hoverHTML.offsetHeight - 5) + "px";
+    });
 }

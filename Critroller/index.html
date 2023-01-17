@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		
+		<style>
+			.flex{
+				display: flex;
+				justify-content: space-around;
+			}
+
+			.center{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			button{
+				background-color: #ba255e;
+				width: 30vw;
+				height: 15vw;
+				text-align: center;
+				border: none;
+				border-radius: 15px;
+				font-size: max(1rem, 1.5vmax);
+				font-weight: bold;
+			}
+
+			button:hover{
+				background-color: #94214d;
+			}
+
+			h1{
+				font-size: max(1rem, 1.7vmax);
+				font-weight: normal;
+			}
+
+			h2{
+				font-size: max(1rem, 1.2vmax);
+				font-weight: normal;
+			}
+
+			
+			
+			body{
+				width: 80%;
+				margin-inline: auto;
+				font-family: "Times New Roman";
+			}
+			
+			#hover{
+				pointer-events: none;
+				padding: 0.5vw;
+				background-color: white;
+				position: absolute;
+				border-color: #8f1d48;
+				overflow: hidden;
+				border-style: solid;
+				border-radius: 5px;
+				font-size: max(12px, 0.8vmax);
+				
+				width: 20vw;
+				
+				display: none;
+			}
+
+			#hover h3{
+				margin-top: 0;
+				padding-top: 0;
+			}
+
+			#effects a:hover{
+				background-color: #ba255e;
+			}
+			
+			@media only screen and (max-width: 700px) {
+				body {
+					width: 100%;
+				}
+
+				#hover{
+					width: 90vw;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="hover">
+		</div>
+		<div>
+			<div style="margin-top: 2rem;">
+				<div class="center">
+					<h2 id="location">
+						Hit Location.
+					</h2>
+					<h1 id="effects" style="text-align: center;">
+						The Effect Of The Critical.
+					</h1>
+				</div>
+				<div class="flex">
+					<h2 id="description">
+					The Short Description.
+					</h2>
+					
+					<h2 id="wounds">
+					The Number of wounds.
+					</h2>
+				</div>
+			</div>
+			<div class="flex" style="margin-top: 2rem;">
+				<button onclick="getCritical(0)">
+					Roll Critical
+				</button>
+			
+				<button onclick="getCritical(-20)">
+					Roll Critical(-20)
+				</button>
+			</div>
+		</div>
+		
+		
+		<script src="scrpt.js"></script>
+	</body>
+</html>
