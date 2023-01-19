@@ -65,9 +65,10 @@ function setSliderValues(values){
 
         for (let i = 0; i < sliders.length; i++) {
             const slider = sliders[i];
+            const audio = audios[i];
             const currentValue = linearInterpolation(startValue[i], targetValue[i], factor);
             slider.value = currentValue;
-            audios.volume = currentValue;
+            audio.volume = currentValue;
         }
 
         if(factor >= 1){
