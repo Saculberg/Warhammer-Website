@@ -35,6 +35,7 @@ function linearInterpolation(start, end, factor){
 }
 
 const sliders = document.getElementsByClassName("slider");
+const audios = document.getElementsByTag("audio");
 
 function getSliderValues(){
     const ret = new Array(sliders.length);
@@ -64,7 +65,9 @@ function setSliderValues(values){
 
         for (let i = 0; i < sliders.length; i++) {
             const slider = sliders[i];
-            slider.value = linearInterpolation(startValue[i], targetValue[i], factor);
+            const currentValue = linearInterpolation(startValue[i], targetValue[i], factor);
+            slider.value = currentValue;
+            audios.volume = currentValue;
         }
 
         if(factor >= 1){
