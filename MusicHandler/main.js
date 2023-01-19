@@ -90,7 +90,7 @@ for (let i = 0; i < presetButtons.length; i++) {
     const presetButton = presetButtons[i];
     presetButtons[i] = undefined;
 
-    presetButtons.addEventListener("click", (event) => {
+    presetButton.addEventListener("click", (event) => {
         if(presetValues[i] == undefined){
             const presetName = prompt("Preset Name:", "Preset " + (i + 1));
             presetButtons.textContent = presetName;
