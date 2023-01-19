@@ -35,7 +35,7 @@ function linearInterpolation(start, end, factor){
 }
 
 const sliders = document.getElementsByClassName("slider");
-const audios = document.getElementsByTag("audio");
+const audios = document.getElementsByTagName("audio");
 
 function getSliderValues(){
     const ret = new Array(sliders.length);
