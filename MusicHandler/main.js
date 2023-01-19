@@ -1,4 +1,4 @@
-﻿
+
 const audioChannels = document.getElementsByClassName("audioChannel")
 
 for (let i = 0; i < audioChannels.length; i++) {
@@ -82,22 +82,22 @@ function setSliderValues(values){
     animationFunc(0, getSliderValues(), values);
 }
 
-const prefabButtons = document.getElementsByClassName("prefab");
+const presetButtons = document.getElementsByClassName("prefab");
 
-const prefabValues = new Array(prefabButtons.length);
+const presetValues = new Array(presetButtons.length);
 
-for (let i = 0; i < prefabButtons.length; i++) {
-    const prefabButton = prefabButtons[i];
-    prefabValues[i] = undefined;
+for (let i = 0; i < presetButtons.length; i++) {
+    const presetButton = presetButtons[i];
+    presetButtons[i] = undefined;
 
-    prefabButton.addEventListener("click", (event) => {
-        if(prefabValues[i] == undefined){
-            const prefabName = prompt("Prefab Name:", "Prefab " + (i + 1));
-            prefabButton.textContent = prefabName;
-            prefabValues[i] = getSliderValues();
+    presetButtons.addEventListener("click", (event) => {
+        if(presetValues[i] == undefined){
+            const presetName = prompt("Preset Name:", "Preset " + (i + 1));
+            presetButtons.textContent = presetName;
+            presetValues[i] = getSliderValues();
         }
         else{
-            setSliderValues(prefabValues[i])
+            setSliderValues(presetValues[i])
         }
     });
 }
