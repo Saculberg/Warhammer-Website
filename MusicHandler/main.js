@@ -93,7 +93,7 @@ for (let i = 0; i < presetButtons.length; i++) {
     presetButton.addEventListener("click", (event) => {
         if(presetValues[i] == undefined){
             const presetName = prompt("Preset Name:", "Preset " + (i + 1));
-            presetButtons.textContent = presetName;
+            presetButtons[i].textContent = presetName;
             presetValues[i] = getSliderValues();
         }
         else{
